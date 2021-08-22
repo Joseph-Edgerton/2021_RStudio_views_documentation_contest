@@ -1,5 +1,5 @@
 ---
-title: "2021_RStudio_R_Views_Documentation_ggnet2_internal_values"
+title: "2021_RStudio_R_Views_Documentation_internal_values"
 author: "Joseph Edgerton"
 date: "8/21/2021"
 output: html_document
@@ -8,6 +8,30 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+```{r download packages}
+my_packages <- c("tidyverse",
+                 "here",
+                 "igraph",
+                 "ggnet2",
+                 "network",
+                 "tidygraph",
+                 "ggraph")
+
+install.packages(my_packages, repos = "https://cran.r-project.org")
+
+```
+
+
+```{r load packages}
+library(tidyverse)
+library(here)
+library(igraph)
+library(network)
+library(tidygraph)
+library(ggraph)
+```
+
 
 One of the persistent challenges I face with data visualizations is making them "space efficient." I usually aim to present the maximum amount of information using a minimal amount of space. A principle that is not always easy or clear in how to implement on a particular graph.
 
@@ -23,4 +47,11 @@ Yet, there are some interesting customizable options that I believe can be furth
 
 One issue I encountered in making network graphs is how to display multiple or continuous attributes per node. The previously mentioned customization options are good for displaying single values of information, but what if you needed to visualize not just two or three attributes but instead five attributes per node? How about a trend or summary of data per node?
 
-I arrived at one answer when creating a network shiny app to improve staff project/updates communication. \<\>
+I arrived at one answer when creating a network shiny app to improve staff project/updates communication. <https://community.rstudio.com/t/staff-and-project-visualization-shiny-contest-submission/104765>
+
+-Image of my app with the idea-
+
+###
+
+
+
