@@ -1,0 +1,26 @@
+---
+title: "2021_RStudio_R_Views_Documentation_ggnet2_internal_values"
+author: "Joseph Edgerton"
+date: "8/21/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+One of the persistent challenges I face with data visualizations is making them "space efficient." I usually aim to present the maximum amount of information using a minimal amount of space. A principle that is not always easy or clear in how to implement on a particular graph.
+
+In this case, network graphs---visualizations that display nodes or vertices and the connections between them as edges or links---have a lot of options for customization and notation. Node size, color, and shape can be changed to add additional attributes to a graph, or edge length, thickness, and annotation can indicate other attributes
+
+-Add graph showing off all possible attributes/lot of the common ways to present network info
+
+Additionally, some network graph packages are compatible with ggplot elements, making these graphs even more customizable.
+
+-show network plot on a set of ggplot axes?
+
+Yet, there are some interesting customizable options that I believe can be further explored with respect to network graph presentation.
+
+One issue I encountered in making network graphs is how to display multiple or continuous attributes per node. The previously mentioned customization options are good for displaying single values of information, but what if you needed to visualize not just two or three attributes but instead five attributes per node? How about a trend or summary of data per node?
+
+I arrived at one answer when creating a network shiny app to improve staff project/updates communication. \<\>
